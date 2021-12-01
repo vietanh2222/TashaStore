@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="./img/bep.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+         
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../index-content.css">
+    <link rel="stylesheet" href="Aboutus.css">
+    <!-- <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script> -->
+    <title>TASHA | About Us
+    </title>
+    <style>
+        
+    .main-nav .t-home {
+        border-bottom: none;
+        color:#676767;
+    }
+
+    .main-nav .t-abouts {
+        border-bottom: 4px solid #00c6d7;
+        color: #00c6d7;
+    }
+
+    #login_render a{
+      text-overflow: ellipsis;
+      overflow: hidden;
+      word-break: break-all;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+    }
+
+    input#user_name, input#password{
+      width: 85%; 
+      height: 52px; 
+      border-radius: 0px; 
+      border-left: 3px solid #00c6d7";
+    }
+
+    @media (max-width:580px){
+
+      input#user_name, input#password{
+      width: 100%; 
+      }
+      
+      i.p-3.float-end{
+        display: none;
+      }
+    }
+    </style>
+
+</head>
+<body id="reponsive-font-size">
+<div class="main">
+    <!-- Header -->
+    <header id="myHeader" class="header-main">
+
+        <div class="container">
+            <div class="row header-height">
+
+                <!-- Logo -->
+                <div class="col-lg-2 col-sm-3 col-3 align-self-center">
+                    <!--icon-bars-->
+                    <label for="nav-mobile-input" class="nav-mobil-bars"><i class="fas fa-bars"></i></label>
+                    <div class="logo">
+                        <a href="#">
+                            <img style="width: 90%;height: 87px" src="./img/bep.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="logo-none-lap col-sm-6 col-6">
+                    <div class="logo-mb-header d-flex justify-content-center">
+                        <div style="width: 90px">
+                            <a href="../HRKitchen.html">
+                                <img style="height: 48px" src="../img/bep.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-sm-3 col-3 order-lg-3 align-self-center">
+
+                    <div class="d-flex justify-content-end">
+                        <div class="main-nav col d-lex align-self-center menu-header-lap">
+                            <a class="nav-item active t-home" href="../HRKitchen.html">Home page</a>
+                            <div class="dropdown d-inline">
+                                <a class="nav-item t-product" href="../Display-Component/AllProduct.html">Product</a>
+                                <div class="dropdown-menu p-0" style="border-radius: 0;top:55px;left: 0"
+                                     aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item dropdown-link" href="../Display-Component/CookWare1.html">Cookware</a>
+                                    <a class="dropdown-item dropdown-link" href="../Display-Component/Freezers.html">Refrigeration</a>
+                                    <a class="dropdown-item dropdown-link" href="../Display-Component/Appliances.html">Appliances</a>
+                                    <a class="dropdown-item dropdown-link" href="../Display-Component/FoodStorage.html">Food Storage</a>
+                                </div>
+                            </div>
+                            <a class="nav-item t-blog" href="../Appliances/blog/blog.html">Blog Review</a>
+                            <a class="nav-item t-abouts" href="../Food%20Storage/AboutUs.html">About Us</a>
+                            <a class="nav-item t-contact" href="../Appliances/Contact/Contract%20Us.html">Contact</a>
+                        </div>
+
+                        <input type="checkbox" class="nav__input" id="nav-mobile-input">
+                        <label for="nav-mobile-input" class="nav__overlay"></label>
+                        <div class="nav-mobile" id="nav-mobile-respon">
+                            <label for="nav-mobile-input" class="nav-mobile-close">
+                                <i class="fas fa-times" style="margin: 7px 0;"></i>
+                            </label>
+                            <div class="nav-mobile-list" data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+                                <div class="pd-menu-mb" id="myScrollspy">
+                                    <div class="wrap-logo-mb">
+                                        <a href="#" class="logo-mobile">
+                                            <img style="width: 100%;" src="../img/bep.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="pd-top-nav-mn">
+                                        <div class="wrap-mobile-link">
+                                            <i class="fas fa-home"></i>
+                                            <a class="nav-mobile-link" href="../HRKitchen.html">Home</a>
+                                        </div>
+                                        <div class="wrap-mobile-link" style="position: relative">
+                                            <i class="fas fa-hamburger" style="position: absolute;"></i>
+                                            <div class="dropdown transition-drop" style="margin-left: 35px;position: static;width: 86%;">
+                                                <a class="nav-mobile-link" href="../Display-Component/AllProduct.html">Product</a>
+                                                <ul class="dropdown-menu position-static" style="border-radius: 0;border: 0;padding: 0;">
+                                                    <li><a href="../Display-Component/CookWare1.html">Cookware</a></li>
+                                                    <li><a href="../Display-Component/Freezers.html">Refrigeration</a></li>
+                                                    <li><a href="../Display-Component/Appliances.html">Appliances</a></li>
+                                                    <li><a href="../Display-Component/FoodStorage.html">Food Storage</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="wrap-mobile-link">
+                                            <i class="fas fa-blog"></i>
+                                            <a class="nav-mobile-link" href="../Appliances/blog/blog.html">Blog Review</a>
+                                        </div>
+                                        <div class="wrap-mobile-link">
+                                            <i class="fas fa-address-card"></i>
+                                            <a class="nav-mobile-link" href="../Food%20Storage/AboutUs.html">About Us</a>
+                                        </div>
+                                        <div class="wrap-mobile-link">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            <a class="nav-mobile-link" href="../Display-Component/shopping-cart.html">Shopping cart</a>
+                                        </div>
+                                        <div class="wrap-mobile-link">
+                                            <i class="fas fa-comment-alt"></i>
+                                            <a class="nav-mobile-link" href="../Appliances/Contact/Contract%20Us.html">Contact</a>
+                                        </div>
+                                        <div class="wrap-mobile-link border-0">
+                                            <i class="fas fa-power-off"></i>
+                                            <button type="submit" style="background: none;border: none;padding: 0"
+                                                    class="btn-account" id="login_render-mobile" onclick="showModal()" data-bs-target="#lgBackdrop">
+                                                <a class="nav-mobile-link">Log in</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="shopping-cart d-flex justify-content-center">
+                            <div class="align-self-center">
+                                <a class="color-cart" href="../Display-Component/shopping-cart.html"><i
+                                        class="fas fa-shopping-cart"><span id="number_Of_Item">0</span></i></a>
+                            </div>
+                        </div>
+                        <div class="wrap-log-in d-flex justify-content-center" id="login_render" style="width: 100px;">
+                            <div class="log-in align-self-center">
+                                <button type="submit" style="background: none;border: none; padding: 10px 14px;"
+                                        class="btn-account" onclick="showModal()" data-bs-target="#lgBackdrop">
+                                    <a class="color-cart"><b style="font-size: 14px;display: flex">Log in</b></a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--  Modal Sign In -->
+  <div  class="modal fade" id="lgBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="lgBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="lgBackdropLabel">Sign In</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="col-12 mt-3">
+            <label for="user_name" style="font-weight: 500;">User Name</label>
+            <input id="user_name" class="form-control d-inline-block" type="text" >
+            <i class="fas fa-user p-3 float-end" style="color:white; background-color: #00c6d7; font-size:20px"></i>
+          </div>
+          <div class="col-12 mt-3">
+            <label for="password" style="font-weight: 500;">Password</label>
+            <input id="password" class="form-control d-inline-block" type="password">
+            <i class="fas fa-lock p-3 float-end" style="color:white; background-color: #00c6d7; font-size:20px"></i>
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-center" style="border: 0px">
+          <div id="error_login"></div>
+          <button type="button" class="btn btn-info text-white w-100" style="border-radius: 0px; height: 52px" onclick="checkLogin()">Sign In</button>
+          <span style="color:black;">Don't have an Account.<a href="../Display-Component/Sign-Up.html">   Sign Up Now ! </a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--    About us-->
+
+    <section class="bg-light" style="padding:6rem 0;">
+        <div class="container">
+            <div class="row gx-4 gx-lg-5 align-items-center">
+                <div class="col-lg-6">
+                    <img class="card-img-top" src="./img/Flask8.jpg" alt="..." style="height: 450px;" />
+                </div>
+                <div class="col-lg-6" style="height: 480px;">
+
+                    <h1 class="fw-bolder text-center" style="padding-top: 16px;">
+                        TASHA KITCHEN APPLIANCES COMPANY LTD
+                    </h1>
+                    <table class="table table-borderless">
+                        <tbody>
+                            <tr>
+                            <td>Founded in:</td>
+                            <td style="font-weight: 500;">2009</td>
+                            </tr>
+                            <tr>
+                            <td>Business Type:</td>
+                            <td style="font-weight: 500;">Manufacturer/Factory</td>
+                            </tr>
+                            <tr>
+                            <td>Main Products:</td>
+                            <td style="font-weight: 500;">Cookware, Refrigerators, FoodStorage, .....</td>
+                            </tr>
+                            <tr>
+                            <td>Plant Area:</td>
+                            <td style="font-weight: 500;">>2000 square meters</td>
+                            </tr>
+                            <tr>
+                            <td>Main Markets:</td>
+                            <td style="font-weight: 500;">North America, South America, Eastern Europe, Africa, Oceania</td>
+                            </tr>
+                            <tr >
+                            <td>Average Lead Time:</td>
+                            <td style="font-weight: 500;">Peak season lead time: 1-3 months
+                                Off season lead time: one month</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section" id="about">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">our history</h2>
+                <h3 class="section-subheading text-muted">Best quality, Best price !</h3>
+            </div>
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="img/history-1.jpg" alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>2009-2011</h4>
+                            <h4 class="subheading">The TASHA Beginnings</h4>
+                        </div>
+                        <div class="timeline-body"><p class="text-muted">Our company was founded by Chandler Bing, who was then 65 years old, as a metal holloware manufacturing company in Wolverhampton !</p></div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="img/history-2.jpg" alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>March 2011</h4>
+                            <h4 class="subheading">Beautiful and Inexpensive</h4>
+                        </div>
+                        <div class="timeline-body"><p class="text-muted">TASHA exhibited some of their latest Holloware designs at the British Industries Fair. The original poster displays their stand number A410.</p></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="img/history-3.jpg" alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>December 2015</h4>
+                            <h4 class="subheading">Become Stronger</h4>
+                        </div>
+                        <div class="timeline-body"><p class="text-muted">TASHA, under Russell Hobbs, became one of the largest manufacturers of aluminium Holloware, electrical kettles, tea pots and other household articles with over 1000 employees.</p></div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="img/history-4.jpg" alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>November 2021</h4>
+                            <h4 class="subheading">Significant Branding</h4>
+                        </div>
+                        <div class="timeline-body"><p class="text-muted">We have our stores in every citys of European.</p></div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image">
+                        <h4 class="text-white">
+                            Be Part
+                            <br />
+                            Of Our
+                            <br />
+                            Story!
+                        </h4>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Team-->
+    <section class="page-section bg-light" id="team">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+                <h3 class="section-subheading text-muted">We try harder !</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="img/member-1.jpg" alt="..." />
+                        <h4>Nguyen Van Binh</h4>
+                        <p class="text-muted">Lead Designer</p>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="img/member-3.jpg" alt="..." />
+                        <h4>Nguyen Viet Anh</h4>
+                        <p class="text-muted">Lead Developer</p>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="img/member-2.jpg" alt="..." />
+                        <h4>Hoang Thi Thao</h4>
+                        <p class="text-muted">Lead Marketer</p>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="img/member-4.jpg" alt="..." />
+                        <h4>Nguyen Hoang Son</h4>
+                        <p class="text-muted">Lead Tester</p>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Once you stop learning, you'll start dying.</p></div>
+            </div>
+        </div>
+    </section>
+    
+
+<!--end-->
+</div>
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<div>
+    <div class="ndElDd">
+      <g-more-link class="mIKy0c OSrXXb dGWpb">
+        <hr class="pb5vrc">
+        <div class="MXl0lf mtqGb">
+          <span class="wUrVib OSrXXb">BENEFITS AT TASHA</span>
+        </div>
+      </g-more-link>
+    </div>
+</div>
+
+<section>
+    <div class="row my-lg-5 mt-0 my-sm-4 my-md-4">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-12 div-an-toan">
+            <div class="icon-box-img mb-4">
+                <i class="fas fa-hand-holding-heart fa-5x"></i>
+            </div>
+            <div class="icon-box-text">
+                <h4 style="text-align: center;">Quality and safe products</h4>
+                <p style="text-align: center;">all items TASHA sells are quality products, safe and of clear origin.</p>
+                <p style="text-align: center;">TASHA has the most stringent quality standards to deliver quality products.</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 div-dich-vu" style="border-left: 1px solid #ececec;">
+            <div class="icon-box-img mb-4 check-img">
+                <i class="fas fa-check fa-5x"></i>
+            </div>
+            <div class="icon-box-text last-reset text-center">
+                <h4>Best service, free return.</h4>
+                <p>We guarantee free returns for any reason.</p>
+                <p>TASHA supports home delivery for customers.</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 div-sale" style="border-left: 1px solid #ececec;">
+            <div class="icon-box-img mb-4">
+                <i class="fas fa-piggy-bank fa-5x"></i>
+            </div>
+            <div class="icon-box-text last-reset text-center">
+                <h4>Promotions, gifts and discounts for gratitude</h4>
+                <p>TASHA always wants customers to save more when shopping </p>
+                <p>TASHA regularly has promotions, gifts, discounts for all its loyal customers.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+</div>
+<footer class="text-left" style="background-color: #0b0c10;color: #c5c6c7">
+    <section class="">
+        <div class="container text-sm-left text-md-start mt-5">
+            <div class="row pt-5 wrap-footer">
+                <div class="col-md-3 col-sm-4 col-lg-4 col-xl-3 col-8 mx-auto mb-lg-4 mb-md-4 mb-sm-3 img-nd">
+                    <h5 class="wrap-img-footer">
+                        <a href="../HRKitchen.html" class="d-inline-block">
+                            <img style="width: 86%;height:80px;margin-right: 20px" src="./img/bep.jpg">
+                        </a>
+                    </h5>
+                    <p>Good product, beautiful, rich.</p>
+                    <p>Strictly guarantee product quality.</p>
+                    <p>Best service.</p>
+                </div>
+                <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2 col-4 mx-auto mb-lg-4 mb-md-4 mb-sm-3 menu-footer">
+                    <h5 class="fw-bold mb-4" style="color: #c5c6c7">
+                        List
+                    </h5>
+                    <p>
+                        <a href="../Display-Component/CookWare1.html" class="text-reset">Cookware:</a>
+                    </p>
+                    <p>
+                        <a href="../Display-Component/Freezers.html" class="text-reset">Refrigeration</a>
+                    </p>
+                    <p>
+                        <a href="../Display-Component/Appliances.html" class="text-reset">Appliances</a>
+                    </p>
+                    <p>
+                        <a href="../Display-Component/FoodStorage.html" class="text-reset">Food Storage</a>
+                    </p>
+                </div>
+                <div id="contact-mobile" class="col-md-4  col-sm-4 col-lg-3 col-xl-3 col-8 mx-auto mb-md-0 mb-lg-4 mb-sm-3 color-icon">
+                    <h5 class="fw-bold mb-4" style="color: #c5c6c7">
+                        Contact
+                    </h5>
+                    <p><i class="fas fa-home me-3"></i>Cau Giay street- Ha Noi City</p>
+                    <p>
+                        <i class="fas fa-envelope me-3"></i>
+                        kitchenwera@gmail.com
+                    </p>
+                    <p><i class="fas fa-phone me-3"></i> + 84 567 467 678</p>
+                    <p><i class="fas fa-print me-3"></i> + 84 345 686 868</p>
+                </div>
+                <div class="col-md-3 col-sm-2 col-lg-2 col-xl-2 col-4 mx-auto mb-lg-4 mb-md-4 mb-sm-3 support-link">
+                    <h5 class="fw-bold mb-4" style="color: #c5c6c7">
+                        Support
+                    </h5>
+                    <p>
+                        <a href="../Food%20Storage/AboutUs.html" class="text-reset">About TASHA</a>
+                    </p>
+                    <p>
+                        <a href="../Appliances/Contact/Contract%20Us.html" class="text-reset">Contact</a>
+                    </p>
+                </div>
+                <div id="contact-auto" class="col-md-4  col-sm-4 col-lg-3 col-xl-3 col-8 mx-auto mb-md-0 mb-lg-4 mb-sm-3 color-icon">
+                    <h5 class="fw-bold mb-4" style="color: #c5c6c7">
+                        Contact
+                    </h5>
+                    <p><i class="fas fa-home me-3"></i> Cau Giay street- Ha Noi City</p>
+                    <p>
+                        <i class="fas fa-envelope me-3"></i>
+                        kitchenwera@gmail.com
+                    </p>
+                    <p><i class="fas fa-phone me-3"></i> + 84 567 467 678</p>
+                    <p><i class="fas fa-print me-3"></i> + 84 345 868 868</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="text-center copy-respon" style="padding:20px;background-color: #1f2833;color: #45A29E">
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="../HRKitchen.html">TASHA</a>
+    </div>
+</footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="../fitler-search-and-shopping-cart/products.js"></script>
+<script src="../fitler-search-and-shopping-cart/shopping-cart.js"></script>
+<script src="../fitler-search-and-shopping-cart/Log-In.js"></script>
+<script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+</body>
+</html>
