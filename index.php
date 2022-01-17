@@ -715,7 +715,7 @@
               List
             </h5>
             <p>
-              <a href="Display-Component/CookWare1.html" class="text-reset">Cookware:</a>
+              <a href="Display-Component/CookWare1.html" class="text-reset">Cookware</a>
             </p>
             <p>
               <a href="Display-Component/Freezers.html" class="text-reset">Refrigeration</a>

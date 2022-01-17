@@ -23,7 +23,7 @@ function renderItemOfCard(){
                 "\n" +
                 "                                    </div>\n" +
                 "                                    <div class=\"position-absolute text-center w-100\" style=\"bottom: 40px;\">\n" +
-                "                                        <button class=\"btn btn-success\"><a href=\"CookWare1.html\" class=\"text-white px-2\">Shop Now !</a></button>\n" +
+                "                                        <button class=\"btn btn-success\"><a href=\"AllProduct.html\" class=\"text-white px-2\">Shop Now !</a></button>\n" +
                 "                                    </div>\n" +
                 "                                </div>";
         } else {
@@ -52,7 +52,7 @@ function renderItemOfCard(){
                     "                                                    </div>\n" +
                     "                                                </td>\n" +
                     "\n" +
-                    "                                                <td class=\"align-middle\" width=\"90\">\n" +
+                    "                                                <td class=\"align-middle\" width=\"85\">\n" +
                     "                                                    " + item.price + "\t <strong>X</strong> \n" +
                     "\n" +
                     "                                                </td>\n" +

@@ -12,12 +12,12 @@
          
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="../index-content.css">
-    <link rel="stylesheet" href="Aboutus.css">
+    <link rel="stylesheet" href="./Aboutus.css">
     <!-- <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script> -->
     <title>TASHA | About Us
     </title>
     <style>
-        
+
     .main-nav .t-home {
         border-bottom: none;
         color:#676767;
@@ -40,10 +40,13 @@
     input#user_name, input#password{
       width: 85%; 
       height: 52px; 
-      border-radius: 0px; 
-      border-left: 3px solid #00c6d7";
+      border-radius: 0;
+      border-left: 3px solid #00c6d7;
     }
 
+    .infor-company{
+        height: 480px;
+    }
     @media (max-width:580px){
 
       input#user_name, input#password{
@@ -54,13 +57,16 @@
         display: none;
       }
     }
+        .infor-company{
+            height: 440px;
+        }
     </style>
 
 </head>
 <body id="reponsive-font-size">
 <div class="main">
     <!-- Header -->
-    <header id="myHeader" class="header-main">
+    <header id="myHeader" class="header-main position-fixed">
 
         <div class="container">
             <div class="row header-height">
@@ -213,13 +219,13 @@
   </div>
 <!--    About us-->
 
-    <section class="bg-light" style="padding:6rem 0;">
+    <section class="bg-light" style="padding:6rem 0;" id="margin-top-content">
         <div class="container">
             <div class="row gx-4 gx-lg-5 align-items-center">
                 <div class="col-lg-6">
                     <img class="card-img-top" src="./img/Flask8.jpg" alt="..." style="height: 450px;" />
                 </div>
-                <div class="col-lg-6" style="height: 480px;">
+                <div class="col-lg-6 infor-company">
 
                     <h1 class="fw-bolder text-center" style="padding-top: 16px;">
                         TASHA KITCHEN APPLIANCES COMPANY LTD
@@ -326,43 +332,43 @@
                 <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
                 <h3 class="section-subheading text-muted">We try harder !</h3>
             </div>
-            <div class="row">
-                <div class="col-lg-3">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2">
+                <div class="col">
                     <div class="team-member">
                         <img class="mx-auto rounded-circle" src="img/member-1.jpg" alt="..." />
                         <h4>Nguyen Van Binh</h4>
-                        <p class="text-muted">Lead Designer</p>
+                        <p class="text-muted">Chief Executive Officer</p>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
 
-                <div class="col-lg-3">
+                <div class="col">
                     <div class="team-member">
                         <img class="mx-auto rounded-circle" src="img/member-3.jpg" alt="..." />
                         <h4>Nguyen Viet Anh</h4>
-                        <p class="text-muted">Lead Developer</p>
+                        <p class="text-muted">Chief Financial Officer</p>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col">
                     <div class="team-member">
                         <img class="mx-auto rounded-circle" src="img/member-2.jpg" alt="..." />
                         <h4>Hoang Thi Thao</h4>
-                        <p class="text-muted">Lead Marketer</p>
+                        <p class="text-muted">Chief Marketing Officer</p>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col">
                     <div class="team-member">
                         <img class="mx-auto rounded-circle" src="img/member-4.jpg" alt="..." />
                         <h4>Nguyen Hoang Son</h4>
-                        <p class="text-muted">Lead Tester</p>
+                        <p class="text-muted">Chief Business Officer</p>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
@@ -447,7 +453,7 @@
                         List
                     </h5>
                     <p>
-                        <a href="../Display-Component/CookWare1.html" class="text-reset">Cookware:</a>
+                        <a href="../Display-Component/CookWare1.html" class="text-reset">Cookware</a>
                     </p>
                     <p>
                         <a href="../Display-Component/Freezers.html" class="text-reset">Refrigeration</a>

@@ -14,6 +14,10 @@
     <title>TASHA | Shopping Cart
     </title>
     <style>
+
+       #shopping-cart{
+            margin-top: 120px;
+        }
         #renderEmptyCart{
             height: 400px;
             background-image: url("../Cookware/cookware/empty-card-2.png");
@@ -43,8 +47,8 @@
         input#user_name, input#password{
             width: 85%; 
             height: 52px; 
-            border-radius: 0px; 
-            border-left: 3px solid #00c6d7";
+            border-radius: 0;
+            border-left: 3px solid #00c6d7;
         }
 
         @media (max-width:580px){
@@ -60,6 +64,10 @@
             button.btn.btn-danger.position-absolute {
                 display: none;
             }
+
+            #shopping-cart{
+            margin-top: 80px;
+        }
         }
     </style>
 </head>
@@ -96,7 +104,7 @@
                         <div class="main-nav col d-lex align-self-center menu-header-lap">
                             <a class="nav-item active t-home" href="../HRKitchen.html">Home page</a>
                             <div class="dropdown d-inline">
-                                <a class="nav-item t-product" href="#">Product</a>
+                                <a class="nav-item t-product" href="AllProduct.html">Product</a>
                                 <div class="dropdown-menu p-0" style="border-radius: 0;top:51px;left: 0"
                                      aria-labelledby="dropdownMenuButton">
                                     <a class="dropdown-item dropdown-link" href="CookWare1.html">Cookware</a>
@@ -131,7 +139,7 @@
                                         <div class="wrap-mobile-link" style="position: relative">
                                             <i class="fas fa-hamburger" style="position: absolute;"></i>
                                             <div class="dropdown transition-drop" style="margin-left: 35px;position: static;width: 86%;">
-                                                <a class="nav-mobile-link" href="#">Product</a>
+                                                <a class="nav-mobile-link" href="AllProduct.html">Product</a>
                                                 <ul class="dropdown-menu position-static" style="border-radius: 0;border: 0;padding: 0;">
                                                     <li><a href="CookWare1.html">Cookware</a></li>
                                                     <li><a href="Freezers.html">Refrigeration</a></li>
@@ -220,7 +228,7 @@
         </div>
     </div>
 
-    <section style="margin-top: 100px">
+    <section id="shopping-cart">
         <div class="container">
             <div class="wrapper wrapper-content animated fadeInRight">
                 <div class="row">
@@ -329,7 +337,7 @@
                                     </button>
                                 </div>
                                 <button class="btn btn-danger position-absolute" style="left:50%; transform: translateX(-50%)" onclick="removeAllItem()"><i class="fas fa-trash pe-2"></i>Empty cart</button>
-                                <a href="CookWare1.html"><button class="btn btn-white float-start"><i class="fa fa-arrow-left"></i> Continue shopping</button></a>
+                                <a href="AllProduct.html"><button class="btn btn-white float-start"><i class="fa fa-arrow-left"></i> Continue shopping</button></a>
                             </div>
                         </div>
                     </div>
@@ -458,7 +466,7 @@
                             List
                         </h5>
                         <p>
-                            <a href="./CookWare1.html" class="text-reset">Cookware:</a>
+                            <a href="./CookWare1.html" class="text-reset">Cookware</a>
                         </p>
                         <p>
                             <a href="Freezers.html" class="text-reset">Refrigeration</a>
@@ -575,7 +583,7 @@
     }
 
     function orderNow() {
-        alert("Thank you for purchasing from HR-KICHENWARE." +
+        alert("Thank you for purchasing from TASHA Store" +
             "  Your Order will be completed soon !");
         let modal = document.getElementById('staticBackdrop');
         modal.style.display = 'none';
