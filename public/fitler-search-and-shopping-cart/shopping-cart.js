@@ -1,13 +1,10 @@
 let cartListItems = [];
 let renderNumberOfItem = document.getElementById("number_Of_Item");
 
-
 (function editFontSizeforChomreAndEgde () {
-    var userAgent = navigator.userAgent;
-    var screenWidth = window.screen.width;
-    
-    if(screenWidth > 1024 && userAgent && (userAgent.toLocaleLowerCase().match(/chrome|chromium|crios/i) || userAgent.toLocaleLowerCase().match(/edg/i))){
-      document.querySelector('html').style.fontSize = '80%';
+    const fontSize = Number(window.getComputedStyle(document.body).getPropertyValue('font-size').match(/\d+/)[0])
+    if(fontSize > 16){
+      document.querySelector('html').style.fontSize = '16px';
     }
 })();
 //get data from localStorage
