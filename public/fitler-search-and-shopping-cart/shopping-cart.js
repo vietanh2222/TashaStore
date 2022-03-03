@@ -1,12 +1,6 @@
 let cartListItems = [];
 let renderNumberOfItem = document.getElementById("number_Of_Item");
 
-(function editFontSizeforChomreAndEgde () {
-    const fontSize = Number(window.getComputedStyle(document.body).getPropertyValue('font-size').match(/\d+/)[0])
-    if(fontSize > 16){
-      document.querySelector('html').style.fontSize = '16px';
-    }
-})();
 //get data from localStorage
 function getDataFromLocalStorage() {
     let getDataFromLocal = window.localStorage.getItem('cart');
