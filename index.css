@@ -1,6 +1,3 @@
-html {
-  font-size: 80%;
-}
 
 body {
   /*color: var(--textcolor);*/
@@ -549,9 +546,7 @@ a {
 }
 
 @media (max-width: 992px) {
-  html {
-    font-size: 60%;
-  }
+
   .banner.position-relative {
     margin-top: 48px !important;
   }
@@ -616,9 +611,7 @@ a {
 }
 
 @media only screen and (max-width: 767px) {
-  html {
-    font-size: 50%;
-  }
+
 
   .div-dich-vu {
     border-left: none !important;
@@ -663,9 +656,7 @@ a {
 }
 
 @media (max-width: 575px) {
-  html {
-    font-size: 40%;
-  }
+
 
   #reponsive-font-size {
     font-size: 14px;
@@ -935,9 +926,7 @@ a {
 }
 
 @media (max-width: 490px) {
-  /* .html {
-    font-size: 30%;
-  } */
+ 
   div.sidebar.container.d-flex {
     flex-direction: column;
     align-items: center;
